@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home — Sulaiman</title>
+        <meta name="description" content="Sulaiman — student learning HTML, CSS, and JavaScript. Based in Kano, Nigeria.">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.css">
+</head>
+<body>
+
+<header id="site-header" class="site-header" data-component="header" role="banner"></header>
+
+<main id="main" class="site-main">
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Sulaiman</h1>
+                <p class="hero-sub">I'm a student learning HTML, CSS, and JavaScript.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-primary" href="projects.html">View My Projects</a>
+                    <a class="btn btn-secondary" href="contact.html">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-photo" aria-hidden="true">
+                <!-- Replace with your real background-free photo at images/profile-photo.jpg -->
+                <img src="images/my-img.png" alt="Sulaiman — profile photo" id="profile-photo">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="preview about-preview container fade-up" id="about-preview">
+        <h2>About</h2>
+        <p>
+            I'm learning web development for about 2–3 years through school, online tutorials, and personal practice. I became interested because I wanted to understand what is happening behind the scenes and how things work. My goal is to become a skilled software developer who can build useful applications and solve real-world problems with technology.
+        </p>
+        <a class="read-more" href="about.html">Read More</a>
+    </section>
+
+    <section class="preview skills-preview container fade-up" id="skills-preview">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <article class="skill-card">
+                <div class="icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML</h3>
+                <p>Used for structuring web pages. I know semantic HTML5 and building accessible page layouts.</p>
+            </article>
+            <article class="skill-card">
+                <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS</h3>
+                <p>Used for styling and layout. I am learning responsive design, flexbox, grid, and modern UI techniques.</p>
+            </article>
+            <article class="skill-card">
+                <div class="icon"><i class="fab fa-js-square"></i></div>
+                <h3>JavaScript</h3>
+                <p>Used for interactivity. I am learning vanilla JavaScript to add components, form handling, and animations.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="preview projects-preview container fade-up">
+        <h2>Projects I've Built</h2>
+        <div class="projects-row">
+            <article class="project-card" role="button" tabindex="0" data-title="My Personal Portfolio" data-tech="HTML • CSS • JavaScript">
+                <div class="project-image placeholder">
+                    <img src="images/my-portfolio-img.jpg" alt="Placeholder for portfolio project screenshot">
+                </div>
+                <div class="project-body">
+                    <h3>My Personal Portfolio</h3>
+                    <p>This is my first web project. It is a place to showcase my skills and learning journey, while also giving me practical experience with HTML, CSS, JavaScript, and more as I continue learning.</p>
+                    <p class="tech">HTML • CSS • JavaScript</p>
+                </div>
+            </article>
+        </div>
+        <a class="view-all" href="projects.html">View All Projects</a>
+    </section>
+
+    <!-- Project modal (shared) -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+      <div class="project-modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" aria-label="Close project">&times;</button>
+        <div class="modal-image"><img src="images/my-portfolio-img.jpg" alt=""></div>
+        <div class="modal-body">
+          <h3 id="modal-title">Project title</h3>
+          <p id="modal-desc"></p>
+          <p class="tech" id="modal-tech"></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="final-cta container fade-up">
+        <h2>Let's Connect</h2>
+        <a class="btn btn-primary" href="contact.html">Contact Me</a>
+    </section>
+
+</main>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<footer id="site-footer" class="site-footer" data-component="footer" role="contentinfo"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

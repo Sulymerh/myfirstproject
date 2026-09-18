@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — Sulaiman</title>
+    <meta name="description" content="Contact Sulaiman — sulaimany59720@gmail.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.css">
+</head>
+<body>
+
+    <header id="site-header" class="site-header" data-component="header" role="banner"></header>
+
+    <main class="container contact-page">
+        <header class="page-header">
+            <h1>Contact</h1>
+            <p class="lead">I'd love to hear about your project or questions. Message me below or email directly.</p>
+        </header>
+
+        <section class="contact-grid">
+            <div class="contact-info card">
+                <h3>Contact</h3>
+                <p class="muted">Fastest way: <a href="mailto:sulaimany59720@gmail.com" class="link">sulaimany59720@gmail.com</a></p>
+                <p class="muted">Location: Kano, Nigeria</p>
+                <div class="contact-quick">
+                    <a href="#" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="contact-form card">
+                <h3>Send a message</h3>
+                <div id="form-status" class="form-status" aria-live="polite"></div>
+                <form id="contact-form" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your full name" required>
+                        <div class="field-error" data-for="name"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        <div class="field-error" data-for="email"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or question" required></textarea>
+                        <div class="field-error" data-for="message"></div>
+                    </div>
+
+                    <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" style="display:none">
+
+                    <div style="margin-top:12px">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="reset" class="btn btn-secondary" style="margin-left:8px">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer" class="site-footer" data-component="footer" role="contentinfo"></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

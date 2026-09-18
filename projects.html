@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Sulaiman</title>
+  <meta name="description" content="Projects by Sulaiman — personal portfolio project.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.css">
+</head>
+<body>
+
+  <header id="site-header" class="site-header" data-component="header" role="banner"></header>
+
+  <main class="container projects-page">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p class="lead">Projects I've built and am working on.</p>
+    </header>
+
+    <section class="projects-grid">
+      <article class="project-card" role="button" tabindex="0" data-title="My Personal Portfolio" data-tech="HTML • CSS • JavaScript">
+        <div class="project-image placeholder">
+          <img src="images/my-portfolio-img.jpg" alt="Placeholder for portfolio project screenshot">
+        </div>
+        <div class="project-body">
+          <h3>My Personal Portfolio</h3>
+          <p>This is my first web project, created to showcase my skills and learning journey and to practice HTML, CSS, JavaScript, and more.</p>
+          <p class="tech">HTML • CSS • JavaScript</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Project modal (shared) -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+      <div class="project-modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" aria-label="Close project">&times;</button>
+        <div class="modal-image"><img src="images/my-portfolio-img.jpg" alt=""></div>
+        <div class="modal-body">
+          <h3 id="modal-title">Project title</h3>
+          <p id="modal-desc"></p>
+          <p class="tech" id="modal-tech"></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="site-footer" class="site-footer" data-component="footer" role="contentinfo"></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
