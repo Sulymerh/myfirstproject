@@ -340,7 +340,7 @@ body{
 	/* Contact page layout and form styles */
 	.contact-grid {
 		display: grid;
-		grid-template-columns: 360px 1fr;
+		grid-template-columns: 360px 450px;
 		gap: 28px;
 		align-items: start;
 		margin-top: 12px;
@@ -592,6 +592,18 @@ body{
 	@media (max-width: 900px) {
 		.hero-inner {
 			grid-template-columns: 1fr;
+			gap: 32px;
+			text-align: center;
+		}
+
+		.hero-ctas {
+			justify-content: center;
+		}
+
+		.hero-photo {
+			width: 100%;
+			max-width: 360px;
+			margin: 0 auto;
 		}
 
 		.nav-links {
