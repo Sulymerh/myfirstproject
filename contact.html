@@ -29,11 +29,16 @@
 			<h1>Let's connect</h1>
 			<p>Have a question or want to talk about a project? You can reach me through the details below.</p>
 			<ul class="contact-list">
-				<li><i class="fas fa-envelope"></i> sulaiman@example.com</li>
-				<li><i class="fas fa-phone"></i> <a href="tel:+2340000000000">+234 808 762 5043</a></li>
+				<li><i class="fas fa-envelope"></i> sulaimany597@gmail.com</li>
+				<li><i class="fas fa-phone"></i> <a href="tel:+2348087625043">+234 808 762 5043</a></li>
 				<li><i class="fas fa-location-dot"></i> Kano, Nigeria</li>
 			</ul>
-			<form class="contact-form" id="contactForm">
+			
+			<!-- Contact Form updated with Web3Forms backend endpoint and access key -->
+			<form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+				<!-- Replace YOUR_ACCESS_KEY with the access key sent to sulaimany597@gmail.com -->
+				<input type="hidden" name="access_key" value="e2c22511-ca83-43eb-82ed-5f264dcf4bfa">
+
 				<div class="form-field">
 					<label for="name">Name</label>
 					<input type="text" id="name" name="name" autocomplete="name" required>
