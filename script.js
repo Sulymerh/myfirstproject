@@ -50,11 +50,37 @@ window.addEventListener('scroll', () => {
 // Return the visitor to the top of the current page.
 if (backToTop) backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// Confirm the contact form submission while no server is connected yet.
+// Handle contact form submission asynchronously via Web3Forms
 if (contactForm && formStatus) {
-    contactForm.addEventListener('submit', (event) => {
+    contactForm.addEventListener('submit', async (event) => {
         event.preventDefault();
-        formStatus.textContent = 'Thank you. Your message is ready to send.';
-        contactForm.reset();
+        formStatus.textContent = 'Sending message...';
+        
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            });
+            
+            const result = await response.json();
+            
+            if (response.status === 200) {
+                formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+                contactForm.reset();
+            } else {
+                formStatus.textContent = result.message || 'Something went wrong. Please try again.';
+            }
+        } catch (error) {
+            console.error(error);
+            formStatus.textContent = 'Failed to send message. Please check your network connection.';
+        }
     });
 }
