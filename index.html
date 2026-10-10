@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulaiman | Portfolio</title>
+    <meta name="description" content="Sulaiman's portfolio: a student learning HTML, CSS, and JavaScript.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bdf78ccd28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav">
+            <a href="index.html" class="logo"><span><i class="fas fa-code"></i></span> Sulaiman</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm Sulaiman</h1>
+                <p>I'm a student learning HTML, CSS, and JavaScript.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn-secondary">Contact me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/my-img.png" alt="Portrait of Sulaiman">
+            </div>
+        </section>
+        <section class="page-section summary-section">
+            <h2>A little about my work</h2>
+            <p class="section-intro">Explore the main parts of my portfolio and see what I am learning.</p>
+            <div class="summary-grid">
+                <article class="card summary-card">
+                    <i class="fas fa-user"></i>
+                    <h3>About me</h3>
+                    <p>Learn about my journey as a student building a foundation in web development.</p>
+                    <a href="about.html" class="btn-secondary">Read about me <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="card summary-card">
+                    <i class="fas fa-code"></i>
+                    <h3>My projects</h3>
+                    <p>See the personal projects and practice work I have created with web technologies.</p>
+                    <a href="projects.html" class="btn-secondary">View projects <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="card summary-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>My skills</h3>
+                    <p>Discover the HTML, CSS, and JavaScript skills I am developing through practice.</p>
+                    <a href="skills.html" class="btn-secondary">See my skills <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Sulaiman. Built with HTML, CSS, and JavaScript.</p>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <span class="socials">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

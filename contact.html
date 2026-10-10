@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Sulaiman</title>
+	<meta name="description" content="Contact Sulaiman.">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/bdf78ccd28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="site-header">
+		<div class="nav">
+			<a href="index.html" class="logo"><span><i class="fas fa-code"></i></span> Sulaiman</a>
+			<button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+				<i class="fas fa-bars"></i>
+			</button>
+			<nav class="nav-links" id="navLinks">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="skills.html">Skills</a>
+				<a href="contact.html" class="active">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="page-section">
+			<h1>Let's connect</h1>
+			<p>Have a question or want to talk about a project? You can reach me through the details below.</p>
+			<ul class="contact-list">
+				<li><i class="fas fa-envelope"></i> sulaiman@example.com</li>
+				<li><i class="fas fa-phone"></i> <a href="tel:+2340000000000">+234 000 000 0000</a></li>
+				<li><i class="fas fa-location-dot"></i> Kano, Nigeria</li>
+			</ul>
+			<form class="contact-form" id="contactForm">
+				<div class="form-field">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" autocomplete="name" required>
+				</div>
+				<div class="form-field">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" autocomplete="email" required>
+				</div>
+				<div class="form-field">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="subject" required>
+				</div>
+				<div class="form-field">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" required></textarea>
+				</div>
+				<button type="submit" class="btn-primary">
+					<i class="fas fa-paper-plane"></i> Send message
+				</button>
+				<p class="form-status" id="formStatus" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<p>&copy; 2026 Sulaiman.</p>
+			<div class="footer-links">
+				<a href="index.html">Home</a>
+				<a href="projects.html">Projects</a>
+			</div>
+		</div>
+	</footer>
+	<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+	<script src="script.js"></script>
+</body>
+</html>
